@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Intergrid</title>
+
+	<link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+
+	<template id="node">
+
+		<div class="node">
+
+			<input type="checkbox">
+			<label></label>
+
+			<span class="content"></span>
+
+			<div class="children"></div>
+
+		</div>
+		
+	</template>
+
+	<template id="column">
+
+		<article class="column"></article>
+
+	</template>
+
+	<main data-mode="view">
+
+		<div class="backdrop"></div>
+
+		<div class="columns">
+
+			<!-- columns go here -->
+
+		</div>
+		
+	</main>
+
+	<footer>
+
+		<div class="view edit" id="newline">
+		
+			<span>New line</span>
+		
+			<kbd>Enter</kbd>
+		
+		</div>
+
+		<div class="edit" id="save">
+		
+			<span>Save</span>
+		
+			<kbd>⌘Enter</kbd>
+		
+		</div>
+
+		<div class="edit" id="cancel">
+		
+			<span>Cancel</span>
+		
+			<kbd>Escape</kbd>
+		
+		</div>
+		
+		<div class="view" id="edit">
+		
+			<span>Edit</span>
+		
+			<kbd>F2</kbd>
+		
+		</div>
+		
+		<div class="view" id="delete">
+		
+			<span>Delete</span>
+		
+			<kbd>Del</kbd>
+		
+		</div>
+		
+		<div class="view edit" id="indent">
+		
+			<span>Indent</span>
+		
+			<kbd>Tab</kbd>
+		
+		</div>
+		
+		<div class="view edit" id="outdent">
+		
+			<span>Outdent</span>
+		
+			<kbd>⇧Tab</kbd>
+		
+		</div>
+		
+		<div class="view edit">
+		
+			<span>Move line</span>
+		
+			<kbd id="moveup">⌘⇧↑</kbd><kbd id="movedown">⌘⇧↓</kbd>
+		
+		</div>
+		
+		<div class="view edit" id="expand">
+		
+			<span>Expand</span>
+		
+			<kbd>⌘↓</kbd>
+		
+		</div>
+		
+		<div class="view edit" id="collapse">
+		
+			<span>Collapse</span>
+		
+			<kbd>⌘↑</kbd>
+		
+		</div>
+
+	</footer>
+	
+	<script src="engine.js"></script>
+	
+</body>
+
+</html>
